@@ -1,6 +1,6 @@
-# Kafka Data Pipeline Solution
+# Real-Time Analytics Platform
 
-A real-time data pipeline solution using Apache Kafka, MongoDB, and Streamlit for data ingestion, processing, aggregation, and visualization.
+A comprehensive real-time data analytics platform using Apache Kafka, MongoDB, and Streamlit for data ingestion, processing, aggregation, and visualization.
 
 ## 🏗️ Architecture
 
@@ -112,7 +112,7 @@ A real-time data pipeline solution using Apache Kafka, MongoDB, and Streamlit fo
 1. **Clone the repository:**
    ```bash
    git clone <repository-url>
-   cd kafka-data-pipeline
+   cd real-time-analytics-platform
    ```
 
 2. **Install Python dependencies:**
@@ -192,7 +192,7 @@ bin/kafka-topics.sh --create --topic sales --bootstrap-server localhost:9092 --p
 bin/kafka-topics.sh --create --topic inventory --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1
 ```
 
-### 5. Running the Pipeline on Windows
+### 5. Running the Platform on Windows
 
 #### Option 1: Use Windows Batch File (Easiest)
 ```bash

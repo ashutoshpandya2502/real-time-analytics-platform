@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Pipeline Startup Script
-Helper script to start all components of the Kafka data pipeline
+Real-Time Analytics Platform Startup Script
+Helper script to start all components of the real-time analytics platform
 """
 
 import subprocess
@@ -119,9 +119,9 @@ def start_producer():
         return None
 
 def main():
-    """Main function to start the pipeline"""
-    print("🎯 Kafka Data Pipeline Startup")
-    print("=" * 40)
+    """Main function to start the platform"""
+    print("🎯 Real-Time Analytics Platform Startup")
+    print("=" * 45)
     
     # Check dependencies
     if not check_dependencies():
@@ -133,7 +133,7 @@ def main():
         print("\n❌ Please start required services first.")
         sys.exit(1)
     
-    print("\n✅ All checks passed! Starting pipeline components...")
+    print("\n✅ All checks passed! Starting platform components...")
     
     # Start components
     processes = []
@@ -159,7 +159,7 @@ def main():
         print("\n❌ Failed to start any components.")
         sys.exit(1)
     
-    print("\n🎉 Pipeline started successfully!")
+    print("\n🎉 Real-Time Analytics Platform started successfully!")
     print("\n📋 Running components:")
     for name, process in processes:
         print(f"   - {name}: PID {process.pid}")
@@ -182,7 +182,7 @@ def main():
                     print(f"\n⚠️  {name} process has stopped unexpectedly")
                     
     except KeyboardInterrupt:
-        print("\n\n🛑 Stopping pipeline components...")
+        print("\n\n🛑 Stopping platform components...")
         
         for name, process in processes:
             try:
@@ -195,7 +195,7 @@ def main():
             except Exception as e:
                 print(f"❌ Error stopping {name}: {e}")
         
-        print("\n👋 Pipeline stopped. Goodbye!")
+        print("\n👋 Platform stopped. Goodbye!")
 
 if __name__ == "__main__":
     main() 
